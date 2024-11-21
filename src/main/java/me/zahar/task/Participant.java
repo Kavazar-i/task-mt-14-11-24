@@ -4,28 +4,39 @@ import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.TimeUnit;
+
 public class Participant extends Thread {
     private Integer participantId;
     private int currentLotPrice;
     private int cash;
     private CyclicBarrier barrier = Auction.barrier;
+
     public Participant(int id, int currentLotPrice, int cash) {
         this.participantId = id;
         this.currentLotPrice = currentLotPrice;
         this.cash = cash;
     }
+
     public Integer getBidId() {
         return participantId;
     }
+
     public int getCurrentLotPrice() {
         return currentLotPrice;
     }
+
     public int getCash() {
         return cash;
     }
+
     public void setCash(int cash) {
         this.cash = cash;
     }
+
+    public void setBarrier(CyclicBarrier barrier) {
+        this.barrier = barrier;
+    }
+
     @Override
     public void run() {
         try {
