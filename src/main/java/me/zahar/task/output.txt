@@ -1,0 +1,59 @@
+Аукцион #1, число участников: 4
+Participant 0 specifies a price. (cash = 146)
+Participant 3 specifies a price. (cash = 109)
+Participant 2 specifies a price. (cash = 135)
+Participant 1 specifies a price. (cash = 130)
+Auction Participant 1 : 68
+Auction Participant 2 : 66
+Auction Participant 0 : 60
+Auction Participant 3 : 68
+Требуется дополнительный аукцион между участниками с максимальными ставками!
+Participant 1 specifies a price. (cash = 130)
+Participant 3 specifies a price. (cash = 109)
+Participant 3 Continue to work...(cash = 109)
+Participant 0 Continue to work...(cash = 146)
+Participant 2 Continue to work...(cash = 135)
+Participant 1 Continue to work...(cash = 130)
+Аукцион #1 завершён!
+
+
+Аукцион #2, число участников: 4
+Participant 0 specifies a price. (cash = 145)
+Participant 1 specifies a price. (cash = 107)
+Participant 2 specifies a price. (cash = 100)
+Participant 3 specifies a price. (cash = 136)
+Auction Participant 1 : 79
+Auction Participant 3 : 81
+Дополнительный раунд завершён!
+Participant 3 Continue to work...(cash = 109)
+Participant 1 Continue to work...(cash = 130)
+Auction Participant 0 : 58
+Auction Participant 2 : 59
+Auction Participant 3 : 58
+Auction Participant 1 : 61
+Participant #1, price:61 win!
+Participant 1 Continue to work...(cash = 46)
+Participant 0 Continue to work...(cash = 145)
+Participant 2 Continue to work...(cash = 100)
+Participant 3 Continue to work...(cash = 136)
+Аукцион #2 завершён!
+
+
+Аукцион #3, число участников: 5
+Participant 0 specifies a price. (cash = 137)
+Participant 1 specifies a price. (cash = 102)
+Participant 2 specifies a price. (cash = 146)
+Participant 3 specifies a price. (cash = 144)
+Participant 4 specifies a price. (cash = 126)
+Auction Participant 0 : 56
+Auction Participant 4 : 60
+Auction Participant 1 : 68
+Auction Participant 2 : 61
+Auction Participant 3 : 55
+Participant #1, price:68 win!
+Participant 3 Continue to work...(cash = 144)
+Participant 0 Continue to work...(cash = 137)
+Participant 4 Continue to work...(cash = 126)
+Participant 2 Continue to work...(cash = 146)
+Participant 1 Continue to work...(cash = 34)
+Аукцион #3 завершён!

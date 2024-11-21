@@ -40,18 +40,28 @@ public class Participant extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println("Participant " + participantId
-                    + " specifies a price. (cash = " + cash + ")");
-            TimeUnit.MILLISECONDS.sleep(new Random().nextInt(2500));
-            int delta = new Random().nextInt(20); /* determine the level of
-price increase */
+            synchronized (System.out) { // Синхронизация вывода
+                System.out.println("Participant " + participantId + " specifies a price. (cash = " + cash + ")");
+            }
+
+            // Увеличиваем задержку для читаемости
+            TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
+
+            int delta = new Random().nextInt(20); // Увеличение ставки
             currentLotPrice += delta;
-            System.out.println("Auction Participant " + participantId + " : " + currentLotPrice);
-            this.barrier.await(); // stop at the barrier
-            System.out.println("Participant " + participantId
-                    + " Continue to work...(cash = " + cash + ")");
+
+            synchronized (System.out) { // Синхронизация вывода
+                System.out.println("Auction Participant " + participantId + " : " + currentLotPrice);
+            }
+
+            this.barrier.await(); // Ожидание других участников
+
+            synchronized (System.out) { // Синхронизация вывода
+                System.out.println("Participant " + participantId + " Continue to work...(cash = " + cash + ")");
+            }
         } catch (BrokenBarrierException | InterruptedException e) {
             e.printStackTrace();
         }
     }
+
 }
